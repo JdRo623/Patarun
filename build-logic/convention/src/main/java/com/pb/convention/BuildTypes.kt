@@ -21,6 +21,9 @@ internal fun Project.configureBuildTypes(
             ExtensionTypes.LIBRARY ->{
                 extensions.configure<LibraryExtension>(){
                     buildTypes{
+                        create("Staging"){
+                            configureReleaseBuildType(commonExtension, apiKey)
+                        }
                         debug {
                             configureDebugBuildType(apiKey)
                         }
@@ -35,6 +38,9 @@ internal fun Project.configureBuildTypes(
             ExtensionTypes.APPLICATION -> {
                 extensions.configure<ApplicationExtension>(){
                     buildTypes{
+                        create("Staging"){
+                            configureReleaseBuildType(commonExtension, apiKey)
+                        }
                         debug {
                             configureDebugBuildType(apiKey)
                         }
