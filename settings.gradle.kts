@@ -19,10 +19,12 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "Patarun"
 include(":app")
 include(":auth:data")
-include(":auth:domanin")
+include(":auth:domain")
 include(":auth:presentation")
 include(":core:presentation:designSystem")
 include(":core:presentation:ui")
