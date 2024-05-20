@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -18,10 +19,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+rootProject.name = "Patarun"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-rootProject.name = "Patarun"
 include(":app")
 include(":auth:data")
 include(":auth:domain")
