@@ -23,6 +23,10 @@ class AndroidApplicationConventionPlugin: Plugin<Project> {
                     versionCode = libs.findVersion("projectVersionCode").get().toString().toInt()
                     versionName = libs.findVersion("projectVersionName").get().toString()
                 }
+                configureBuildTypes(
+                    commonExtension = this,
+                    extensionTypes = ExtensionTypes.APPLICATION
+                )
                 configureKotlinAndroid(this)
             }
 
