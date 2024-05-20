@@ -1,18 +1,12 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.mapsplatform.secrets.plugin)
+    alias(libs.plugins.patarun.android.application)
 }
 
 android {
     namespace = "com.pb.patarun"
-    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.pb.patarun"
-        minSdk = 27
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -29,13 +23,7 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+
     buildFeatures {
         compose = true
     }
