@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.patarun.android.library)
+    alias(libs.plugins.patarun.android.room)
 }
 
 android {
@@ -7,7 +8,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.org.mongodb.bson)
     implementation(projects.core.domain)
 }
