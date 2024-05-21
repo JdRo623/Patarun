@@ -43,5 +43,10 @@ gradlePlugin{
             id = "patarun.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
+
+        register("jvmLibrary"){
+            id = "patarun.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
