@@ -119,3 +119,4 @@ mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.
 patarun-android-application = { id = "patarun.android.application", version ="unspecified"}
 patarun-android-application-compose = { id = "patarun.android.application.compose", version ="unspecified"}
 patarun-android-library = { id = "patarun.android.library", version ="unspecified"}
+patarun-android-library-compose = { id = "patarun.android.library.compose", version ="unspecified"}
