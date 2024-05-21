@@ -48,5 +48,10 @@ gradlePlugin{
             id = "patarun.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
+
+        register("jvmKtor"){
+            id = "patarun.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
     }
 }

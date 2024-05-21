@@ -123,6 +123,7 @@ patarun-android-library-compose = { id = "patarun.android.library.compose", vers
 patarun-android-feature-ui = { id = "patarun.android.feature.ui", version ="unspecified"}
 patarun-android-room= { id = "patarun.android.room", version ="unspecified"}
 patarun-jvm-library= { id = "patarun.jvm.library", version ="unspecified"}
+patarun-jvm-ktor= { id = "patarun.jvm.ktor", version ="unspecified"}
 
 [bundles]
 compose = [
@@ -138,3 +139,10 @@ compose-debug = [
     "androidx-compose-ui-test-manifest"]
 koin = ["koin-core","koin-android","koin-android-workmanager"]
 koin-compose = ["koin-core","koin-android","koin-android-workmanager","koin-androidx-compose"]
+ktor = [
+    "ktor-client-auth",
+    "ktor-client-content-negotiation",
+    "ktor-client-cio",
+    "ktor-client-core",
+    "ktor-client-logging",
+    "ktor-serialization-kotlinx-json"]

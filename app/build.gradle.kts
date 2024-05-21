@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.patarun.android.application.compose)
     alias(libs.plugins.mapsplatform.secrets.plugin)
+    alias(libs.plugins.patarun.jvm.ktor)
 }
 
 android {
