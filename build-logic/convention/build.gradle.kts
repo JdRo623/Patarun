@@ -33,5 +33,10 @@ gradlePlugin{
             id = "patarun.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
+
+        register("androidFeatureUi"){
+            id = "patarun.android.feature.ui"
+            implementationClass = "AndroidFeatureUiComposeConventionPlugin"
+        }
     }
 }

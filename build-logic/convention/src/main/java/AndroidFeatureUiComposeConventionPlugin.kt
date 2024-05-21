@@ -1,16 +1,18 @@
-import com.android.build.api.dsl.ApplicationExtension
-import com.android.build.api.dsl.LibraryExtension
-import com.pb.convention.configureAndroidCompose
+
+import com.pb.convention.addUiLayerDependencies
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.kotlin.dsl.getByType
+import org.gradle.kotlin.dsl.dependencies
 
-class AndroidLibraryComposeConventionPlugin: Plugin<Project>{
+
+class AndroidFeatureUiComposeConventionPlugin: Plugin<Project>{
     override fun apply(target: Project) {
         target.run {
-            pluginManager.apply("patarun.android.library")
-            val extension = extensions.getByType<LibraryExtension>()
-            configureAndroidCompose(extension)
+            pluginManager.apply("patarun.android.library.compose")
+
+            dependencies {
+                addUiLayerDependencies(target)
+            }
         }
     }
 }
