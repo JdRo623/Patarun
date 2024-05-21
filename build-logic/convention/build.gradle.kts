@@ -23,5 +23,10 @@ gradlePlugin{
             id = "patarun.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+
+        register("androidLibrary"){
+            id = "patarun.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
     }
 }
