@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.patarun.android.library)
+    alias(libs.plugins.patarun.jvm.ktor)
+
 }
 
 android {
