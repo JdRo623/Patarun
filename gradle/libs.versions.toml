@@ -121,6 +121,7 @@ patarun-android-application-compose = { id = "patarun.android.application.compos
 patarun-android-library = { id = "patarun.android.library", version ="unspecified"}
 patarun-android-library-compose = { id = "patarun.android.library.compose", version ="unspecified"}
 patarun-android-feature-ui = { id = "patarun.android.feature.ui", version ="unspecified"}
+patarun-android-room= { id = "patarun.android.room", version ="unspecified"}
 
 [bundles]
 compose = [

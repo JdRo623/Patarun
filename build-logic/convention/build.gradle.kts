@@ -38,5 +38,10 @@ gradlePlugin{
             id = "patarun.android.feature.ui"
             implementationClass = "AndroidFeatureUiComposeConventionPlugin"
         }
+
+        register("androidRoom"){
+            id = "patarun.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
     }
 }
